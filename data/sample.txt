@@ -2,3 +2,5 @@ I went to the bathroom and Mr.Griswold had removed 2 lines.
 I learned how to use the scanner to get a file from a diffrent file 
 we learned how ids[i] = in.nextInt() scores[i] = in.nextInt();  
 Mr.Griswold taught us the  throws Exception to make it so that we dont run into errores 
+we also learned how to import java.io 
+we used a for loop to run the array threw. 
