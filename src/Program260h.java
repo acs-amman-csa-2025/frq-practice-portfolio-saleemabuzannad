@@ -19,8 +19,8 @@ public class Program260h {
         int count11 = 0;
         int count12 = 0;
         double sum10 = 0; 
-        int sum11 = 0;
-        int sum12 = 0;
+        double sum11 = 0;
+        double sum12 = 0;
         for(int i = 0; i < grade.size();i++){
             if(classes.get(i) == 10){
                 count10++;
@@ -36,9 +36,9 @@ public class Program260h {
             }
         }
        
-        System.out.println("grade 10 has an avrage GPA of" + sum10/count10);
-        System.out.println("grade 11 has an avrage GPA of" + sum11/count11);
-        System.out.println("grade 12 has an avrage GPA of" + sum12/count12);
+        System.out.println("grade 10 has an avrage GPA of " + sum10/count10);
+        System.out.println("grade 11 has an avrage GPA of " + sum11/count11);
+        System.out.println("grade 12 has an avrage GPA of " + sum12/count12);
         
 
 
