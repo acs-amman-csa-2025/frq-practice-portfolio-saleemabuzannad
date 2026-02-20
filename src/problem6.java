@@ -6,13 +6,14 @@ public class problem6 {
     public static void main(String[] args) {
         int saver = 0;
         ArrayList<Integer> digits = new ArrayList<Integer>();// I made and array list and called it digits
-        ArrayList<Integer> boom = new ArrayList<Integer>();// the reason I did this is to keep everything organized because I needed to do step 4 before 5 this fixes the issue becuase (BOOM) stayes uneditded
+        ArrayList<Integer> boom = new ArrayList<Integer>();
+        ArrayList<Integer> hhh = new ArrayList<Integer>(); // the reason I did this is to keep everything organized because I needed to do step 4 before 5 this fixes the issue becuase (BOOM) stayes uneditded
         for (int i = 0; i < 19; i++) {// a loop that will make the randomizer go 19 times
             saver = (int) (Math.random() * 71) + 20;// the loop will go from 20-90,(90-20)=71 thats why starting number
                                                     // is 20
             digits.add(saver);// now my numbers that were randomly generated will go into the arraylist
             boom.add(saver);// the reason I did this is to keep everything organized because I needed to do
-                            // step 4 before 5 this fixes the issue becuase (BOOM) stayes uneditded
+            hhh.add(saver);            // step 4 before 5 this fixes the issue becuase (BOOM) stayes uneditded
         }
         // STEP (1-2) completed
         System.out.println(digits);// prints the arraylist
@@ -65,15 +66,32 @@ public class problem6 {
 
         boom.add(10,b);//I litterly just took the random number and put it in the middle 
         System.out.println(boom + "random number from 1 to 10 and insert it in the center slot");
-        
-        for (int m = 0; m < boom.size(); m++){
+        //Step 8 complete 
+        for (int m = 0; m < 40; m++){//I made this loop basicly add ten after every number 
             boom.add(m,10);
             m++;
 
         }
             System.out.println(boom);
+            //step 9 complete 
+            int sn = 0; //this is where i save the number so that I can print it agian 
+            sn = hhh.get(2); // I get index 2 and save it so that I can use it 
+            hhh.set(2,5);// I switch the 3rd postion wich is at index 2 for the number 5 
+            System.out.println(hhh + " switched the number " + sn + " for the number 5 " );
+            // Step 10 complete 
+            for (int s = 0; s < hhh.size();s++){//I made a for loop for this 
+            if (hhh.get(s) >= 50 && hhh.get(s) <= 59){// checks if it greater than 50 and less than 59
+                System.out.println("number in thier 50's are " + hhh.get(s));
+                //step 11 complete 
+                
+            }
+            }
 
-        System.out.println("TEST TEST TEST");
+            for (int r : hhh) {// for each loop that goes threw the whole list 
+                if (r % 4 == 0) { // checks what is a multiple of 4 
+                System.out.println(r + "all numbers that are multiples of 4");
+                }
+            }
 
         
 
