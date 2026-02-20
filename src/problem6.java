@@ -70,7 +70,10 @@ public class problem6 {
             boom.add(m,10);
         }
             System.out.println(boom);
-            
+
+        System.out.println("TEST TEST TEST");
+
+        
 
             
         }
