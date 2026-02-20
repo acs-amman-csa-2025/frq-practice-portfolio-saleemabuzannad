@@ -68,6 +68,8 @@ public class problem6 {
         
         for (int m = 0; m < boom.size(); m++){
             boom.add(m,10);
+            m++;
+
         }
             System.out.println(boom);
 
