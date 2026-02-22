@@ -67,9 +67,9 @@ public class problem6 {
         boom.add(10,b);//I litterly just took the random number and put it in the middle 
         System.out.println(boom + "random number from 1 to 10 and insert it in the center slot");
         //Step 8 complete 
-        for (int m = 0; m < 40; m++){//I made this loop basicly add ten after every number 
-            boom.add(m,10);
-            m++;
+        for (int m = 0; m < boom.size(); m++){//I made this loop basicly add ten after every number 
+                boom.set(m,boom.get(m) +10);            
+            
 
         }
             System.out.println(boom);
