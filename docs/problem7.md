@@ -1,6 +1,6 @@
 ## Problem statement and definition
 
-Problem Statement
+Problem Statement 
 
 1) Create an Animal class with the following attributes:
 * name
