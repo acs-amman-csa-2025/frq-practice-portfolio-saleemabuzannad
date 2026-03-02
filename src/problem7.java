@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.random.*;
 public class problem7 {
     public static void main(String[] args) {
         
@@ -7,10 +6,11 @@ public class problem7 {
        "heaeaeeae","arabian horse" );
 
        Animal hippo = new Animal("hippo","saleemNationalZoo",
-       "BEN","fat hippo" );
+       "khaaaaashhhh","African hippo" );
        
        Animal owl = new Animal("owl","saleemNationalZoo",
-       "woooooowoooo","Arua owl" );
+       "woooooowoooo","Night owl" );
+
 
         ArrayList<Animal> fanimal = new ArrayList<Animal>();// here I made the Arrat list fanimal and I added each animal to the list 
         fanimal.add(0,horse);//added the horse to indcie 0 
@@ -26,7 +26,7 @@ public class problem7 {
         System.out.println(fanimal.get(0).getzoo());//used the get feature again here 
 
 
-        int randomNum = (int)(Math.random() * 5);// I made the random 1-4 because thats the amount of objects there are and I saved it into randomnum
+        int randomNum = (int)(Math.random() * fanimal.size());// I made the random 1-4 because thats the amount of objects there are and I saved it into randomnum
         System.out.println(fanimal.get(randomNum).getName()+ " is a " + //the way I used the random was the same as the GET but instead of putting and index I put randomnum and saved it and used it 4 times 
         fanimal.get(randomNum).getSpecies() + " that lives in " + fanimal.get(randomNum).getzoo() +
         " and says " + fanimal.get(randomNum).getSound());
