@@ -12,12 +12,11 @@ Create, in code, two more people and add them to the end of the list
 Bonus: can you figure out how to print the two new people back into the file? Hint: there is a class called PrintWriter that lets you write to a file using the println method! Search it up!
 ## Things I did or review to prepare for this problem
 
-Read the definiton of "instance method" to remember what that was, a method that isn't static and needs an object
+I head to remeber how to do setters and getters but thats mostly it for the reiview 
 
 ## Problems I faced doing this problem
 
-I forgot the "void" at first and had an error
-
+one major problem I faced was the adding the people to the list because the list had ints strings and the way you had to do it was intresting, but Mr.Griswold lead the way with that one. 
 ## Things I learned doing this problem
 
-Remembered class methods definition
+Things I learned was the next line() and Next() methods and how to add the poeple 

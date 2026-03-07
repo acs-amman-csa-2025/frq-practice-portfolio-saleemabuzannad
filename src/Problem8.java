@@ -10,19 +10,16 @@ public class Problem8 {
 
         ArrayList<Person> poeples= new ArrayList<Person>();
        while(in.hasNextLine()){
-        String first = in.next();// I could understand this part so I used chat to help me figuer it out, Like I completly had no idea what to do 
+        String first = in.next();//all of this was asstited by Mr.Griswold
         String last = in.next();
         int age = in.nextInt();
         String occupation = in.next();
-        String fullName = first + " " + last;
-        poeples.add(new Person(fullName, age, occupation));
+        Person p = (new Person(first , last , age , occupation));
+        poeples.add(p);
         }
-        for (int i = 0; i < poeples.size(); i++){
-        System.out.print(poeples.get(i).getName() + " ");// I added an extra " " to for a space bitween each peice of info
-        System.out.print(poeples.get(i).getAge() + " ");
-        System.out.print(poeples.get(i).getOccupation()+ " " );
-        System.out.println("");// I added this so that each person is not infront of the next 
-
+        
+        for (Person p : poeples){
+            System.out.println(p.getFirst() + " " + p.getLast());
         }
 
         int avg = 0;
@@ -38,14 +35,15 @@ public class Problem8 {
         for (int i = 0; i < poeples.size();i++){
             
             if (poeples.get(i).getAge() < 25){ //the if statments says if the age is less(younger than) 25 print it 
-            System.out.println(poeples.get(i).getAge());
+            System.out.println(poeples.get(i).getFirst() + " " + poeples.get(i).getAge());
             }
         }
-        Person a = new Person( "Saleem" , 17, "under wear tester"); // I made the new person 
-        Person b = new Person( "eddy gordo", 27 , "brazilian street fighter" );
+        poeples.add(new Person( "Saleem" , "sigma", 17, "under wear tester")); // I made the new person 
+        poeples.add(new Person( "eddy","gordo", 27 , "brazilian street fighter" ));
 
-        poeples.add(a);
-        poeples.add(b);
+            for (int i = 0; i < poeples.size();i++){
+                System.out.println(poeples.get(i).getFirst() + " " + poeples.get(i).getLast());
+            }
+        }
 
     }
-}
